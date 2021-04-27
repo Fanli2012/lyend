@@ -369,7 +369,7 @@ var swiper = new Swiper('.swiper-container', {
 		</ul>
 	</div>
     <div class="block-content fl">
-        <div class="posts-wrap" style="margin-bottom:-20px;">
+        <div class="posts-wrap" style="margin-bottom:-20px;overflow:hidden;">
             <div class="post-big">
                 <a class="thumbnail-link" href="/p/1">
                     <img src="/images/1.jpg" class="img-w3h2" alt="" />
