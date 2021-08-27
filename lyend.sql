@@ -76,7 +76,7 @@ CREATE TABLE `fl_admin` (
 
 /*Data for the table `fl_admin` */
 
-insert  into `fl_admin`(`id`,`role_id`,`name`,`pwd`,`mobile`,`email`,`avatar`,`status`,`login_time`,`add_time`,`update_time`,`delete_time`) values (1,1,'admin888','e10adc3949ba59abbe56e057f20f883e','','admin@qq.com','',0,1606803336,4294967295,0,0),(2,2,'abc','e10adc3949ba59abbe56e057f20f883e','','abc@qq.com','',0,1568191517,4294967295,1542613923,0),(3,1,'xyz','e10adc3949ba59abbe56e057f20f883e','','xyz@qq.com','',0,0,4294967295,1606373822,0);
+insert  into `fl_admin`(`id`,`role_id`,`name`,`pwd`,`mobile`,`email`,`avatar`,`status`,`login_time`,`add_time`,`update_time`,`delete_time`) values (1,1,'admin888','e10adc3949ba59abbe56e057f20f883e','','admin@qq.com','',0,1628305157,4294967295,0,0),(2,2,'abc','e10adc3949ba59abbe56e057f20f883e','','abc@qq.com','',0,1568191517,4294967295,1542613923,0),(3,1,'xyz','e10adc3949ba59abbe56e057f20f883e','','xyz@qq.com','',0,0,4294967295,1606373822,0);
 
 /*Table structure for table `fl_admin_role` */
 
@@ -645,6 +645,36 @@ CREATE TABLE `fl_menu` (
 /*Data for the table `fl_menu` */
 
 insert  into `fl_menu`(`id`,`parent_id`,`name`,`action`,`data`,`type`,`icon`,`desc`,`listorder`,`status`) values (1,0,'文章管理','article_default','',0,'layui-icon layui-icon-read','',10,0),(2,0,'商品管理','goods_default','',0,'layui-icon layui-icon-cart','',20,0),(3,0,'菜单管理','menu_default','',0,'layui-icon layui-icon-align-center','',900,0),(4,0,'用户管理','user_default','',0,'layui-icon layui-icon-user','',40,0),(5,0,'批量维护','extension_default','',0,'layui-icon layui-icon-util','',50,0),(6,0,'设置','sysconfig_default','',0,'layui-icon layui-icon-set','',1000,0),(7,5,'页面跳转','admin_jump','',1,'','',1,1),(8,5,'后台首页','admin','',1,'','',2,1),(9,5,'更新系统参数配置','admin_index_upconfig','',1,'','',3,1),(10,5,'更新缓存','admin_index_upcache','',1,'','',4,1),(11,1,'文章列表','admin_article','',1,'','',20,0),(12,1,'发布文章','admin_article_add','',1,'','',10,0),(14,1,'文章修改','admin_article_edit','',1,'','',50,1),(16,1,'文章删除','admin_article_del','',1,'','',50,1),(17,1,'重复文档检测','admin_article_repetarc','',1,'','',50,0),(18,1,'文章推荐','admin_article_recommendarc','',1,'','',50,1),(19,1,'文章是否存在','admin_article_articleexists','',1,'','',50,1),(20,1,'文章栏目','admin_article_type','',1,'','',30,0),(21,20,'文章栏目添加','admin_article_type_add','',1,'','',50,1),(23,20,'文章栏目修改','admin_article_type_edit','',1,'','',50,1),(25,20,'文章栏目删除','admin_article_type_del','',1,'','',50,1),(26,5,'Tag标签管理','admin_tag','',1,'','',50,0),(27,26,'Tag标签添加','admin_tag_add','',1,'','',50,1),(29,26,'Tag标签修改','admin_tag_edit','',1,'','',50,1),(31,26,'Tag标签删除','admin_tag_del','',1,'','',50,1),(32,5,'单页管理','admin_page','',1,'','',10,0),(33,32,'单页添加','admin_page_add','',1,'','',50,1),(35,32,'单页修改','admin_page_edit','',1,'','',50,1),(37,32,'单页删除','admin_page_del','',1,'','',50,1),(38,2,'商品列表','admin_goods','',1,'','',20,0),(39,2,'商品添加','admin_goods_add','',1,'','',10,0),(41,2,'商品修改','admin_goods_edit','',1,'','',50,1),(43,2,'商品删除','admin_goods_del','',1,'','',50,1),(44,2,'重复商品','admin_goods_recommendarc','',1,'','',50,1),(45,2,'商品是否存在','admin_goods_goodsexists','',1,'','',50,1),(46,2,'商品分类','admin_goods_type','',1,'','',30,0),(47,46,'商品分类添加','admin_goods_type_add','',1,'','',50,1),(49,46,'商品分类修改','admin_goods_type_edit','',1,'','',50,1),(51,46,'商品分类删除','admin_goods_type_del','',1,'','',50,1),(52,5,'友情链接','admin_friendlink','',1,'','',20,0),(53,52,'友情链接添加','admin_friendlink_add','',1,'','',50,1),(55,52,'友情链接修改','admin_friendlink_edit','',1,'','',50,1),(57,52,'友情链接删除','admin_friendlink_del','',1,'','',50,1),(58,5,'关键词管理','admin_keyword','',1,'','',500,0),(59,58,'关键词添加','admin_keyword_add','',1,'','',50,1),(61,58,'关键词修改','admin_keyword_edit','',1,'','',50,1),(63,58,'关键词删除','admin_keyword_del','',1,'','',50,1),(64,5,'搜索关键词','admin_searchword','',1,'','',600,0),(65,64,'搜索关键词添加','admin_searchword_add','',1,'','',50,1),(67,64,'搜索关键词修改','admin_searchword_edit','',1,'','',50,1),(69,64,'搜索关键词删除','admin_searchword_del','',1,'','',50,1),(70,5,'轮播图','admin_slide','',1,'','',40,0),(71,70,'轮播图添加','admin_slide_add','',1,'','',50,1),(73,70,'轮播图修改','admin_slide_edit','',1,'','',50,1),(75,70,'轮播图删除','admin_slide_del','',1,'','',50,1),(76,5,'在线留言','admin_guestbook','',1,'','',700,0),(77,76,'在线留言删除','admin_guestbook_del','',1,'','',50,1),(78,6,'系统基本参数','admin_sysconfig','',1,'','',10,0),(79,78,'系统参数添加','admin_sysconfig_add','',1,'','',50,1),(81,78,'系统参数修改','admin_sysconfig_edit','',1,'','',50,1),(83,78,'系统参数删除','admin_sysconfig_del','',1,'','',50,1),(84,4,'管理员','admin_admin','',1,'','',90,0),(85,84,'管理员添加','admin_admin_add','',1,'','',50,1),(87,84,'管理员修改','admin_admin_edit','',1,'','',50,1),(89,84,'管理员删除','admin_admin_del','',1,'','',50,1),(90,4,'角色管理','admin_admin_role','',1,'','',100,0),(91,90,'角色添加','admin_admin_role_add','',1,'','',50,1),(93,90,'角色修改','admin_admin_role_edit','',1,'','',50,1),(95,90,'角色删除','admin_admin_role_del','',1,'','',50,1),(96,3,'后台菜单','admin_menu','',1,'','',10,0),(97,96,'菜单添加','admin_menu_add','',1,'','',50,1),(99,96,'菜单修改','admin_menu_edit','',1,'','',50,1),(101,96,'菜单删除','admin_menu_del','',1,'','',50,1),(102,90,'权限设置','admin_admin_role_permissions','',1,'','',50,1),(104,5,'欢迎页面','admin_welcome','',1,'','',5,1),(107,2,'商品品牌','admin_goods_brand','',1,'','',40,0),(108,107,'品牌添加','admin_goods_brand_add','',1,'','',50,1),(110,107,'品牌修改','admin_goods_brand_edit','',1,'','',50,1),(112,107,'品牌删除','admin_goods_brand_del','',1,'','',50,1),(113,0,'订单管理','order_default','',0,'layui-icon layui-icon-form','',50,0),(114,113,'订单列表','admin_order','',1,'','',10,0),(115,113,'订单详情','admin_order_detail','',1,'','',50,1),(116,113,'订单修改','admin_order_edit','',1,'','',50,1),(117,116,'订单修改提交','admin_order_doedit','',1,'','',50,1),(118,4,'会员管理','admin_user','',1,'','',10,0),(119,4,'提现申请','admin_user_withdraw','',1,'','',30,0),(120,5,'意见反馈','admin_feedback','',1,'','',800,0),(121,120,'意见反馈删除','admin_feedback_del','',1,'','',50,1),(122,113,'快递管理','admin_kuaidi','',1,'','',50,0),(123,122,'快递添加','admin_kuaidi_add','',1,'','',50,1),(124,122,'快递修改','admin_kuaidi_edit','',1,'','',50,1),(125,122,'快递删除','admin_kuaidi_del','',1,'','',50,1),(126,2,'优惠券管理','admin_bonus','',1,'','',50,0),(127,126,'优惠券添加','admin_bonus_add','',1,'','',50,1),(128,126,'优惠券啊修改','admin_bonus_edit','',1,'','',50,1),(129,126,'优惠券删除','admin_bonus_del','',1,'','',50,1),(130,5,'操作记录','admin_log','',1,'','',900,0),(131,5,'广告管理','admin_ad','',1,'','',30,0),(132,131,'广告添加','admin_ad_add','',1,'','',50,1),(133,131,'广告修改','admin_ad_edit','',1,'','',50,1),(134,131,'广告删除','admin_ad_del','',1,'','',50,1),(135,5,'数据库备份','admin_database','',1,'','',1000,0),(136,4,'充值列表','admin_user_recharge','',1,'','',20,0),(137,4,'余额记录列表','admin_user_money','',1,'','',40,0);
+
+/*Table structure for table `fl_migrations` */
+
+DROP TABLE IF EXISTS `fl_migrations`;
+
+CREATE TABLE `fl_migrations` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `batch` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+/*Data for the table `fl_migrations` */
+
+/*Table structure for table `fl_notifications` */
+
+DROP TABLE IF EXISTS `fl_notifications`;
+
+CREATE TABLE `fl_notifications` (
+  `id` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `notifiable_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `notifiable_id` bigint(20) unsigned NOT NULL,
+  `data` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `read_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+/*Data for the table `fl_notifications` */
 
 /*Table structure for table `fl_order` */
 
