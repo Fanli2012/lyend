@@ -54,6 +54,12 @@ composer config repo.packagist composer https://mirrors.aliyun.com/composer/
 https://easywechat.org/
 
 
+storage软链映射
+# php artisan storage:link //创建storage/app/public目录的软连接
+队列启动
+# nohup php artisan queue:listen >/dev/null 2>&1 &
+# nohup php artisan queue:work --daemon >/dev/null 2>&1 & //不重新加载整个框架，而是直接 fire 动作
+# php artisan queue:restart
 
 
 
@@ -74,7 +80,8 @@ git reset --hard origin/master
 php artisan vendor:publish
 
 
-
+Laravel伪静态
+try_files $uri $uri/ /index.php?$query_string;
 
 
 

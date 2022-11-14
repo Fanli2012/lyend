@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-class SmsLog extends BaseRequest
+class SmsLogRequest extends BaseRequest
 {
     // 验证规则
     protected $rule = [

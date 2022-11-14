@@ -2,7 +2,7 @@
 ## 队列说明
 
 - 在.env文件中配置使用的存储方式，QUEUE_CONNECTION=database
-- 启动队列php artisan queue:work，php artisan queue:restart
+- 启动队列php artisan queue:work --daemon，php artisan queue:restart，想让它在linux后台执行用nohup php artisan queue:work --daemon >/dev/null 2>&1 &
 - 消息队列优点：提高系统响应速度，异步化、解耦、消除峰值
 - 消息队列缺点：暂时的不一致性问题、系统复杂度提高
 

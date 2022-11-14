@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-class Taglist extends BaseRequest
+class TaglistRequest extends BaseRequest
 {
     //总的验证规则
     protected $rules = [

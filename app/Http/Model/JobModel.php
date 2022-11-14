@@ -5,7 +5,7 @@ namespace App\Http\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
-class JobsModel extends BaseModel
+class JobModel extends BaseModel
 {
     //岗位
 

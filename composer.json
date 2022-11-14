@@ -17,7 +17,10 @@
         "maatwebsite/excel": "^3.1",
         "mews/captcha": "^3.2",
         "predis/predis": "^1.1",
-        "workerman/gateway-worker": "^3.0"
+        "workerman/gateway-worker": "^3.0",
+        "aliyuncs/oss-sdk-php": "^2.1",
+        "jacobcyl/ali-oss-storage": "^2.1",
+        "paypal/rest-api-sdk-php": "1.5.1"
     },
     "require-dev": {
         "facade/ignition": "^1.16.4",

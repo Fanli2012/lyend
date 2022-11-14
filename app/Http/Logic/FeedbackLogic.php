@@ -3,11 +3,11 @@
 namespace App\Http\Logic;
 
 use App\Common\Librarys\ReturnData;
-use App\Http\Model\FeedBackModel;
-use App\Http\Requests\FeedBackRequest;
+use App\Http\Model\FeedbackModel;
+use App\Http\Requests\FeedbackRequest;
 use Validator;
 
-class FeedBackLogic extends BaseLogic
+class FeedbackLogic extends BaseLogic
 {
     public function __construct()
     {
@@ -16,13 +16,13 @@ class FeedBackLogic extends BaseLogic
 
     public function getModel()
     {
-        return new FeedBackModel();
+        return new FeedbackModel();
     }
 
     public function getValidate($data, $scene_name)
     {
         //数据验证
-        $validate = new FeedBackRequest();
+        $validate = new FeedbackRequest();
         return Validator::make($data, $validate->getSceneRules($scene_name), $validate->getSceneRulesMessages());
     }
 

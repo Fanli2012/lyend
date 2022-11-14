@@ -13,6 +13,10 @@ class CommonController extends Controller
     {
         parent::__construct();
 
+        if (isset($_SESSION['admin_info'])) {
+            $this->admin_info = $_SESSION['admin_info'];
+        }
+
 		// 添加管理员操作记录
 		$this->operation_log_add();
     }

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Common\Librarys\ReturnData;
 use App\Common\Librarys\Helper;
 
-class Util
+class UtilController
 {
 	/**
      * 数据集为JSON字符串
